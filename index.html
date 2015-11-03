@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    <div id="sequence" class="seq">
+      <div class="seq-screen">
+        <ul class="seq-canvas">
+          <li class="step1">
+            <div class="content">
+              <h2 data-seq>This is an example of GitHub Pages.</h2>
+              <h3 data-seq>It can be used to run static websites like blogs or personal sites.</h3>
+              <h5>(Use your arrow keys)</h5>
+            </div>
+          </li>
+          <li class="step2">
+            <div class="content">
+              <h2 data-seq>Here we are using Sequence.js.</h2>
+              <h3 data-seq>It is a slider-based framework that allows for easy animation.</h3>
+            </div>
+          </li>
+          <li class="step3">
+            <div class="content">
+              <h2 data-seq>This site is almost exclusively HTML and CSS.</h2>
+              <h3 data-seq>Each user on GitHub can have many pages that are hosted from their own repositories. With frameworks like Sequence.js, intense knowledge of JavaScript is not required to create beautiful designs.<br><br>Let me know what you think!</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./sequence.min.js"></script>
+    <script>
+      var sequenceElement = document.getElementById("sequence");
+      var options = {
+        autoPlayInterval: 500,
+        keyNavigation: true,
+        fadeStepWhenSkipped: false
+      }
+      var mySequence = sequence(sequenceElement, options);
+    </script>
+  </body>
+</html>
